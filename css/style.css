@@ -296,7 +296,7 @@ header {
   background-image: url(../img/services-bg.jpg);
   background-size: cover;
   color: var(--clr-light);
-  /* background-blend-mode: multiply; */
+  background-blend-mode: multiply;
 }
 
 .section__title--services {
@@ -392,8 +392,8 @@ header {
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* max-width: 900px;
-  margin: 0 auto; */
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .portfolio__item {
@@ -404,6 +404,9 @@ header {
 .portfolio__img {
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1);
   transition: opacity 250ms liniear;
+  /* problem with not square images */
+  height: 100%;
+  width: 100%;
 }
 
 .portfolio__item:focus {
