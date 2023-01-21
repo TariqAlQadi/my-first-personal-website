@@ -256,6 +256,7 @@ header {
 
 .intro__img {
   box-shadow: var(--bs);
+  border-radius: 5%;
 }
 
 @media (min-width: 600px) {
@@ -320,7 +321,7 @@ header {
 
 .service {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 2em auto;
   color: var(--clr-dark);
   background-color: var(--clr-light);
   padding: 1.5rem;
@@ -351,6 +352,7 @@ header {
   box-shadow: var(--bs);
   position: relative;
   z-index: 10;
+  border-radius: 5%;
 }
 
 @media (min-width: 600px) {
