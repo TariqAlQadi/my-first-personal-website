@@ -497,7 +497,7 @@ header {
   display: flex;
   gap: 1rem;
   width: fit-content;
-  background-color: #fff;
+  background-color: var(--clr-accent);
   padding: 1rem;
   margin-inline: auto;
   border-radius: 0 0 1rem 1rem;
@@ -549,5 +549,5 @@ header {
 :root:has(#blue:checked) {
   --clr-light: rgb(64, 64, 64);
   --clr-dark: #fff;
-  --clr-accent: #4e41ae;
+  --clr-accent: #7b76b0;
 }
