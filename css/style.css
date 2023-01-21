@@ -145,11 +145,14 @@ h3 {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  width: 100%;
 }
 
 .logo {
   max-width: 100px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .nav {
@@ -292,7 +295,6 @@ header {
 
 .my-services {
   background-color: var(--clr-dark);
-  /* background-color: var(--clr-accent); */
   background-image: url(../img/services-bg.jpg);
   background-size: cover;
   color: var(--clr-light);
@@ -475,4 +477,80 @@ header {
   max-width: 600px;
   position: relative;
   padding: 1em 2em;
+}
+
+/* Color Picker */
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.color-picker > fieldset {
+  position: absolute;
+  z-index: 20;
+  transform: translateX(-50%);
+  left: 50%;
+  border: 0;
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+  background-color: #fff;
+  padding: 1rem;
+  margin-inline: auto;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.color-picker input[type="radio"] {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  outline: 3px solid var(--radio-color, currentColor);
+  outline-offset: 3px;
+  border-radius: 50%;
+}
+.color-picker input[type="radio"]#light {
+  --radio-color: rgb(222, 217, 219);
+}
+
+.color-picker input[type="radio"]#dark {
+  --radio-color: rgb(49, 45, 46);
+}
+.color-picker input[type="radio"]#green {
+  --radio-color: green;
+}
+.color-picker input[type="radio"]#blue {
+  --radio-color: blue;
+}
+.color-picker input[type="radio"]:checked {
+  background-color: var(--radio-color);
+}
+
+:root:has(#light:checked) {
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #16e0bd;
+}
+
+:root:has(#dark:checked) {
+  --clr-light: rgb(52, 48, 48);
+  --clr-dark: #ede8e8;
+  --clr-accent: #b12020;
+}
+
+:root:has(#green:checked) {
+  --clr-light: #fff;
+  --clr-dark: #222423;
+  --clr-accent: #83d56f;
+}
+
+:root:has(#blue:checked) {
+  --clr-light: rgb(64, 64, 64);
+  --clr-dark: #fff;
+  --clr-accent: #4e41ae;
 }
