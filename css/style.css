@@ -301,6 +301,7 @@ header {
 .section__title--services {
   color: var(--clr-accent);
   position: relative;
+  margin-bottom: 1.5em;
 }
 
 .section__title--services::after {
@@ -320,6 +321,10 @@ header {
 .service {
   max-width: 500px;
   margin: 0 auto;
+  color: var(--clr-dark);
+  background-color: var(--clr-light);
+  padding: 1.5rem;
+  border-radius: 5%;
 }
 
 @media (min-width: 800px) {
