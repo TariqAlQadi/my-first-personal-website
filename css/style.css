@@ -274,6 +274,7 @@ header {
     min-width: 250px;
     position: relative;
     z-index: 10;
+    border-radius: 5%;
   }
 
   .section__subtitle--intro {
@@ -376,6 +377,7 @@ header {
     grid-area: img;
     position: relative;
     z-index: 10;
+    border-radius: 5%;
   }
 }
 
