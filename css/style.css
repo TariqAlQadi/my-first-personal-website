@@ -62,11 +62,6 @@ strong {
   font-weight: var(--fw-bold);
 }
 
-:focus {
-  outline: 3px solid var(--clr-accent);
-  outline-offset: 3px;
-}
-
 /* buttons */
 
 .btn {
@@ -205,6 +200,7 @@ header {
 .hamburger {
   display: block;
   position: relative;
+  top: 5px;
 }
 
 .hamburger,
@@ -464,6 +460,7 @@ header {
 
 .social-list__link {
   padding: 0.5em;
+  border-radius: 100%;
 }
 
 /* individual portfolio item styles */
